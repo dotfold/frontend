@@ -2,6 +2,11 @@
   text-decoration: underline;
 }
 
+/* nasty terrible specificity hack to make .hover-underline work in old-style pages */
+body.new-nav .hover-underline:hover {
+  text-decoration: underline;
+}
+
 .hover-underline-parent:hover .hover-underline-child {
   text-decoration: underline;
 }
